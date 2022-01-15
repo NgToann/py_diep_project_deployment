@@ -9,5 +9,5 @@ pull:
 up: 
 	docker-compose up -d --build
 log: 
-	docker-compose logs
+	docker-compose logs -f
 deploy: pull up log

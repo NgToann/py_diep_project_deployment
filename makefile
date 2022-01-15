@@ -6,8 +6,10 @@
 
 pull: 
 	docker-compose pull
+git-pull: 
+	git pull origin main
 up: 
 	docker-compose up -d --build
 log: 
 	docker-compose logs -f
-deploy: pull up log
+deploy: git-pull pull up log

@@ -8,8 +8,7 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     restart: always
     volumes:
-      # - ./:/opt/app
-      .
+      - ./:/opt/app
     ports:
       - 8000:8000
       - 8010:8010
